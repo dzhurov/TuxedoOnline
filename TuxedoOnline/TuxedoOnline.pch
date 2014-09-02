@@ -1,0 +1,14 @@
+//
+//  TuxedoOnline.pch
+//  TuxedoOnline
+//
+//  Created by DZhurov on 9/2/14.
+//  Copyright (c) 2014 The Men's Wearhouse. All rights reserved.
+//
+
+#ifndef TuxedoOnline_TuxedoOnline_pch
+#define TuxedoOnline_TuxedoOnline_pch
+
+@import UIKit;
+
+#endif

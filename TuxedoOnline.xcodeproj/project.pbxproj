@@ -13,6 +13,21 @@
 		7E4DF95D19B5E52700A9980E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF95B19B5E52700A9980E /* Main.storyboard */; };
 		7E4DF95F19B5E52700A9980E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF95E19B5E52700A9980E /* Images.xcassets */; };
 		7E4DF96B19B5E52700A9980E /* TuxedoOnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF96A19B5E52700A9980E /* TuxedoOnlineTests.m */; };
+		7E4DF98019B5E68700A9980E /* DelaunayEdge.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF97719B5E68700A9980E /* DelaunayEdge.m */; };
+		7E4DF98119B5E68700A9980E /* DelaunayPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF97919B5E68700A9980E /* DelaunayPoint.m */; };
+		7E4DF98219B5E68700A9980E /* DelaunayTriangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF97B19B5E68700A9980E /* DelaunayTriangle.m */; };
+		7E4DF98319B5E68700A9980E /* DelaunayTriangulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF97D19B5E68700A9980E /* DelaunayTriangulation.m */; };
+		7E4DF98419B5E68700A9980E /* VoronoiCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF97F19B5E68700A9980E /* VoronoiCell.m */; };
+		7E4DF98B19B5E8A100A9980E /* coat_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF98719B5E8A100A9980E /* coat_black.png */; };
+		7E4DF98C19B5E8A100A9980E /* coat_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF98819B5E8A100A9980E /* coat_white.png */; };
+		7E4DF98D19B5E8A100A9980E /* pant_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF98919B5E8A100A9980E /* pant_black.png */; };
+		7E4DF98E19B5E8A100A9980E /* pant_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF98A19B5E8A100A9980E /* pant_white.png */; };
+		7E4DF99319B5EA2000A9980E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4DF99219B5EA2000A9980E /* QuartzCore.framework */; };
+		7E4DF99619B5EADD00A9980E /* ZDFragmentsImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF99519B5EADD00A9980E /* ZDFragmentsImageView.m */; };
+		7E4DF99819B5FACE00A9980E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4DF99719B5FACE00A9980E /* CoreGraphics.framework */; };
+		7E4DF99B19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF99A19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m */; };
+		7E4DF99D19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF99C19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg */; };
+		7E4DF9A119B6267200A9980E /* DelaunayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF9A019B6267200A9980E /* DelaunayView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +53,30 @@
 		7E4DF96419B5E52700A9980E /* TuxedoOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuxedoOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E4DF96919B5E52700A9980E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E4DF96A19B5E52700A9980E /* TuxedoOnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TuxedoOnlineTests.m; sourceTree = "<group>"; };
+		7E4DF97619B5E68700A9980E /* DelaunayEdge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayEdge.h; sourceTree = "<group>"; };
+		7E4DF97719B5E68700A9980E /* DelaunayEdge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayEdge.m; sourceTree = "<group>"; };
+		7E4DF97819B5E68700A9980E /* DelaunayPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayPoint.h; sourceTree = "<group>"; };
+		7E4DF97919B5E68700A9980E /* DelaunayPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayPoint.m; sourceTree = "<group>"; };
+		7E4DF97A19B5E68700A9980E /* DelaunayTriangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayTriangle.h; sourceTree = "<group>"; };
+		7E4DF97B19B5E68700A9980E /* DelaunayTriangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayTriangle.m; sourceTree = "<group>"; };
+		7E4DF97C19B5E68700A9980E /* DelaunayTriangulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayTriangulation.h; sourceTree = "<group>"; };
+		7E4DF97D19B5E68700A9980E /* DelaunayTriangulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayTriangulation.m; sourceTree = "<group>"; };
+		7E4DF97E19B5E68700A9980E /* VoronoiCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoronoiCell.h; sourceTree = "<group>"; };
+		7E4DF97F19B5E68700A9980E /* VoronoiCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoronoiCell.m; sourceTree = "<group>"; };
+		7E4DF98719B5E8A100A9980E /* coat_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coat_black.png; sourceTree = "<group>"; };
+		7E4DF98819B5E8A100A9980E /* coat_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coat_white.png; sourceTree = "<group>"; };
+		7E4DF98919B5E8A100A9980E /* pant_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pant_black.png; sourceTree = "<group>"; };
+		7E4DF98A19B5E8A100A9980E /* pant_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pant_white.png; sourceTree = "<group>"; };
+		7E4DF99219B5EA2000A9980E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E4DF99419B5EADD00A9980E /* ZDFragmentsImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDFragmentsImageView.h; sourceTree = "<group>"; };
+		7E4DF99519B5EADD00A9980E /* ZDFragmentsImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDFragmentsImageView.m; sourceTree = "<group>"; };
+		7E4DF99719B5FACE00A9980E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E4DF99919B5FB9100A9980E /* VoronoiCell+GeometryAndImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoronoiCell+GeometryAndImage.h"; sourceTree = "<group>"; };
+		7E4DF99A19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VoronoiCell+GeometryAndImage.m"; sourceTree = "<group>"; };
+		7E4DF99C19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gray-Sky-Over-Ocean.jpg"; sourceTree = "<group>"; };
+		7E4DF99E19B61E9E00A9980E /* TuxedoOnline.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuxedoOnline.pch; sourceTree = "<group>"; };
+		7E4DF99F19B6267200A9980E /* DelaunayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayView.h; sourceTree = "<group>"; };
+		7E4DF9A019B6267200A9980E /* DelaunayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +84,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4DF99819B5FACE00A9980E /* CoreGraphics.framework in Frameworks */,
+				7E4DF99319B5EA2000A9980E /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +102,8 @@
 		7E4DF94519B5E52700A9980E = {
 			isa = PBXGroup;
 			children = (
+				7E4DF99719B5FACE00A9980E /* CoreGraphics.framework */,
+				7E4DF99219B5EA2000A9980E /* QuartzCore.framework */,
 				7E4DF95019B5E52700A9980E /* TuxedoOnline */,
 				7E4DF96719B5E52700A9980E /* TuxedoOnlineTests */,
 				7E4DF94F19B5E52700A9980E /* Products */,
@@ -83,8 +126,16 @@
 				7E4DF95619B5E52700A9980E /* AppDelegate.m */,
 				7E4DF95819B5E52700A9980E /* ViewController.h */,
 				7E4DF95919B5E52700A9980E /* ViewController.m */,
+				7E4DF99419B5EADD00A9980E /* ZDFragmentsImageView.h */,
+				7E4DF99519B5EADD00A9980E /* ZDFragmentsImageView.m */,
+				7E4DF99919B5FB9100A9980E /* VoronoiCell+GeometryAndImage.h */,
+				7E4DF99A19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m */,
+				7E4DF99F19B6267200A9980E /* DelaunayView.h */,
+				7E4DF9A019B6267200A9980E /* DelaunayView.m */,
 				7E4DF95B19B5E52700A9980E /* Main.storyboard */,
 				7E4DF95E19B5E52700A9980E /* Images.xcassets */,
+				7E4DF97419B5E68700A9980E /* ThirdParty */,
+				7E4DF98519B5E8A100A9980E /* Resources */,
 				7E4DF95119B5E52700A9980E /* Supporting Files */,
 			);
 			path = TuxedoOnline;
@@ -95,6 +146,7 @@
 			children = (
 				7E4DF95219B5E52700A9980E /* Info.plist */,
 				7E4DF95319B5E52700A9980E /* main.m */,
+				7E4DF99E19B61E9E00A9980E /* TuxedoOnline.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -114,6 +166,51 @@
 				7E4DF96919B5E52700A9980E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E4DF97419B5E68700A9980E /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				7E4DF97519B5E68700A9980E /* Edgy */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		7E4DF97519B5E68700A9980E /* Edgy */ = {
+			isa = PBXGroup;
+			children = (
+				7E4DF97619B5E68700A9980E /* DelaunayEdge.h */,
+				7E4DF97719B5E68700A9980E /* DelaunayEdge.m */,
+				7E4DF97819B5E68700A9980E /* DelaunayPoint.h */,
+				7E4DF97919B5E68700A9980E /* DelaunayPoint.m */,
+				7E4DF97A19B5E68700A9980E /* DelaunayTriangle.h */,
+				7E4DF97B19B5E68700A9980E /* DelaunayTriangle.m */,
+				7E4DF97C19B5E68700A9980E /* DelaunayTriangulation.h */,
+				7E4DF97D19B5E68700A9980E /* DelaunayTriangulation.m */,
+				7E4DF97E19B5E68700A9980E /* VoronoiCell.h */,
+				7E4DF97F19B5E68700A9980E /* VoronoiCell.m */,
+			);
+			path = Edgy;
+			sourceTree = "<group>";
+		};
+		7E4DF98519B5E8A100A9980E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E4DF98619B5E8A100A9980E /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7E4DF98619B5E8A100A9980E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7E4DF98719B5E8A100A9980E /* coat_black.png */,
+				7E4DF98819B5E8A100A9980E /* coat_white.png */,
+				7E4DF98919B5E8A100A9980E /* pant_black.png */,
+				7E4DF98A19B5E8A100A9980E /* pant_white.png */,
+				7E4DF99C19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,8 +293,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4DF98E19B5E8A100A9980E /* pant_white.png in Resources */,
+				7E4DF98C19B5E8A100A9980E /* coat_white.png in Resources */,
+				7E4DF98D19B5E8A100A9980E /* pant_black.png in Resources */,
 				7E4DF95D19B5E52700A9980E /* Main.storyboard in Resources */,
 				7E4DF95F19B5E52700A9980E /* Images.xcassets in Resources */,
+				7E4DF99D19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg in Resources */,
+				7E4DF98B19B5E8A100A9980E /* coat_black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +317,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E4DF99619B5EADD00A9980E /* ZDFragmentsImageView.m in Sources */,
+				7E4DF98219B5E68700A9980E /* DelaunayTriangle.m in Sources */,
+				7E4DF98119B5E68700A9980E /* DelaunayPoint.m in Sources */,
 				7E4DF95A19B5E52700A9980E /* ViewController.m in Sources */,
+				7E4DF99B19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m in Sources */,
+				7E4DF98019B5E68700A9980E /* DelaunayEdge.m in Sources */,
+				7E4DF9A119B6267200A9980E /* DelaunayView.m in Sources */,
+				7E4DF98419B5E68700A9980E /* VoronoiCell.m in Sources */,
 				7E4DF95719B5E52700A9980E /* AppDelegate.m in Sources */,
+				7E4DF98319B5E68700A9980E /* DelaunayTriangulation.m in Sources */,
 				7E4DF95419B5E52700A9980E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,9 +444,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = TuxedoOnline/TuxedoOnline.pch;
 				INFOPLIST_FILE = TuxedoOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TuxedoOnline/TuxedoOnline-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -345,9 +460,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				GCC_PREFIX_HEADER = TuxedoOnline/TuxedoOnline.pch;
 				INFOPLIST_FILE = TuxedoOnline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TuxedoOnline/TuxedoOnline-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -404,6 +523,7 @@
 				7E4DF97019B5E52700A9980E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7E4DF97119B5E52700A9980E /* Build configuration list for PBXNativeTarget "TuxedoOnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +532,7 @@
 				7E4DF97319B5E52700A9980E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

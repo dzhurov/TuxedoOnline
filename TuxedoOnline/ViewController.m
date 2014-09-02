@@ -7,8 +7,14 @@
 //
 
 #import "ViewController.h"
+#import "ZDFragmentsImageView.h"
+#import "DelaunayView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet ZDFragmentsImageView *fragmentImageView;
+@property (weak, nonatomic) IBOutlet DelaunayView *delaunaryView;
+- (IBAction)breakTapped:(id)sender;
 
 @end
 
@@ -24,4 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)breakTapped:(id)sender
+{
+    [_fragmentImageView createFragments];
+    self.delaunaryView.triangulation = _fragmentImageView.triangulation;
+    [self.delaunaryView setNeedsDisplay];
+}
 @end
