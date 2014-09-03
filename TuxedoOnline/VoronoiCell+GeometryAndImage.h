@@ -12,6 +12,7 @@
 @interface VoronoiCell (GeometryAndImage)
 
 - (CGRect)frame;
+- (void)restrictByFrame:(CGRect)frame;
 - (CGImageRef)maskedImage:(CGImageRef)image cropedByFrame:(out CGRect*)frame;
 
 @end

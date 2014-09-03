@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
@@ -14,18 +14,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Gray-Sky-Over-Ocean.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XzC-Gv-36y" customClass="ZDFragmentsImageView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="605"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="fIQueIEotX0.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XzC-Gv-36y" customClass="ZDFragmentsImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="485"/>
                             </imageView>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="baf-c2-26P" customClass="DelaunayView">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.59999999999999998" alpha="0.11" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-cB-OyE">
-                                <rect key="frame" x="241" y="59" width="119" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bK-cB-OyE">
+                                <rect key="frame" x="100" y="99" width="119" height="60"/>
                                 <state key="normal" title="Break">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -38,8 +38,10 @@
                         <constraints>
                             <constraint firstItem="XzC-Gv-36y" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="3GI-Of-wjV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XzC-Gv-36y" secondAttribute="bottom" constant="-5" id="3jc-YD-4WC"/>
+                            <constraint firstItem="4bK-cB-OyE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="79" id="ELB-3Z-www"/>
                             <constraint firstAttribute="height" secondItem="baf-c2-26P" secondAttribute="height" id="W3w-F4-cwK"/>
                             <constraint firstAttribute="width" secondItem="baf-c2-26P" secondAttribute="width" id="YHD-gX-LGr"/>
+                            <constraint firstAttribute="centerX" secondItem="4bK-cB-OyE" secondAttribute="centerX" constant="0.5" id="htm-fo-JOc"/>
                             <constraint firstAttribute="width" secondItem="XzC-Gv-36y" secondAttribute="width" id="oB1-VK-4UL"/>
                         </constraints>
                     </view>
@@ -54,6 +56,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Gray-Sky-Over-Ocean.jpg" width="1336" height="768"/>
+        <image name="fIQueIEotX0.jpg" width="604" height="476"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="320" height="480"/>
+            <size key="landscapeSize" width="480" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
 </document>

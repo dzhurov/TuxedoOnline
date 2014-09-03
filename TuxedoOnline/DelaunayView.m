@@ -32,19 +32,19 @@
 {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
-    for (DelaunayTriangle *triangle in self.triangulation.triangles)
-    {
-        if ([triangle inFrameTriangleOfTriangulation:self.triangulation])
-            continue;
-        
-        [triangle.color set];
-//        [[UIColor whiteColor] set];
-        [[UIColor whiteColor] setStroke];
-        [triangle drawInContext:ctx];
-        CGContextDrawPath(ctx, kCGPathFillStroke);
-        //CGContextStrokePath(ctx);
-        
-    }
+//    for (DelaunayTriangle *triangle in self.triangulation.triangles)
+//    {
+//        if ([triangle inFrameTriangleOfTriangulation:self.triangulation])
+//            continue;
+//        
+//        [triangle.color set];
+////        [[UIColor whiteColor] set];
+//        [[UIColor whiteColor] setStroke];
+//        [triangle drawInContext:ctx];
+//        CGContextDrawPath(ctx, kCGPathFillStroke);
+//        //CGContextStrokePath(ctx);
+//        
+//    }
     
     // Draw circumcenters & circumcircles
 //    for (DelaunayTriangle *triangle in self.triangulation.triangles)
@@ -70,9 +70,10 @@
     NSDictionary *voronoiCells = [self.triangulation voronoiCells];    
     for (VoronoiCell *cell in [voronoiCells objectEnumerator])
     {
-        [[UIColor colorWithWhite:cell.site.contribution alpha:0.5] set];
+        [[UIColor greenColor] set];
         [cell drawInContext:ctx];
-        CGContextFillPath(ctx);
+        CGContextDrawPath(ctx, kCGPathStroke);
+//        CGContextFillPath(ctx);
     }
 }
 

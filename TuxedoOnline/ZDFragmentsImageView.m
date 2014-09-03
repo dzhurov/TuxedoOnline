@@ -39,7 +39,7 @@
 
 - (void)initialize
 {
-    _numberOfVertex = 30;
+    _numberOfVertex = 50;
 }
 
 - (void)setImage:(UIImage *)image
@@ -70,23 +70,35 @@
 {
     NSDictionary *voronoiCells = [self.triangulation voronoiCells];
     NSMutableArray *fragmentsSublayers = [NSMutableArray arrayWithCapacity:voronoiCells.count];
-    CGImageRef imageRef = self.image.CGImage;
     
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, NO, 0);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    int i = 0;
     for (VoronoiCell *cell in [voronoiCells objectEnumerator])
     {
+        [cell restrictByFrame:self.bounds];
         CGRect cellFrame = CGRectZero;
-        CGImageRef maskedImageRef = [cell maskedImage:imageRef cropedByFrame:&cellFrame];
-        
+        CGImageRef maskedImageRef = [cell maskedImage:image.CGImage cropedByFrame:&cellFrame];
+        if ( !maskedImageRef )
+            continue;
+        NSLog(@"cellFrame: %@", NSStringFromCGRect(cellFrame));
+            
         CALayer *sublayer = [CALayer layer];
+//        CGRect layerFrame = cellFrame;
+//        layerFrame.origin = CGPointMake(self.bounds.size.height - layerFrame.origin.x, layerFrame.origin.y);
         sublayer.frame = cellFrame;
-        sublayer.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.5].CGColor;
-//        sublayer.contents = (__bridge id)maskedImageRef;
+        sublayer.backgroundColor = [UIColor clearColor].CGColor;
+        sublayer.contents = (__bridge id)maskedImageRef;
         sublayer.borderColor = [UIColor magentaColor].CGColor;
         sublayer.borderWidth = 1.0;
         [self.layer addSublayer:sublayer];
         [fragmentsSublayers addObject:sublayer];
-        NSLog(@"cellFrame: %@", NSStringFromCGRect(cellFrame));
+        i++;
     }
+    self.image = nil;
 }
 
 #pragma mark - Public

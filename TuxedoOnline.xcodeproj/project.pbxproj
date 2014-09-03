@@ -28,6 +28,7 @@
 		7E4DF99B19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF99A19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m */; };
 		7E4DF99D19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF99C19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg */; };
 		7E4DF9A119B6267200A9980E /* DelaunayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF9A019B6267200A9980E /* DelaunayView.m */; };
+		7EC80A4719B738B100193591 /* fIQueIEotX0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EC80A4619B738B100193591 /* fIQueIEotX0.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		7E4DF99E19B61E9E00A9980E /* TuxedoOnline.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TuxedoOnline.pch; sourceTree = "<group>"; };
 		7E4DF99F19B6267200A9980E /* DelaunayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayView.h; sourceTree = "<group>"; };
 		7E4DF9A019B6267200A9980E /* DelaunayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayView.m; sourceTree = "<group>"; };
+		7EC80A4619B738B100193591 /* fIQueIEotX0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fIQueIEotX0.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +211,7 @@
 				7E4DF98919B5E8A100A9980E /* pant_black.png */,
 				7E4DF98A19B5E8A100A9980E /* pant_white.png */,
 				7E4DF99C19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg */,
+				7EC80A4619B738B100193591 /* fIQueIEotX0.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E4DF98E19B5E8A100A9980E /* pant_white.png in Resources */,
+				7EC80A4719B738B100193591 /* fIQueIEotX0.jpg in Resources */,
 				7E4DF98C19B5E8A100A9980E /* coat_white.png in Resources */,
 				7E4DF98D19B5E8A100A9980E /* pant_black.png in Resources */,
 				7E4DF95D19B5E52700A9980E /* Main.storyboard in Resources */,
