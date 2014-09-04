@@ -58,12 +58,17 @@
 {
     self.triangulation = [DelaunayTriangulation triangulationWithRect:self.bounds];
     
-    for (int i = 0; i < _numberOfVertex; ++i) {
+    for (int i = 0; i < _numberOfVertex - 4; ++i) { // 4 angles of self rectangle bounds
         CGPoint loc = CGPointMake(self.bounds.size.width * (arc4random() / (float)0x100000000),
                                   self.bounds.size.height * (arc4random() / (float)0x100000000));
         DelaunayPoint *newPoint = [DelaunayPoint pointAtX:loc.x andY:loc.y];
         [self.triangulation addPoint:newPoint withColor:nil];
     }
+//    [self.triangulation addPoint:[DelaunayPoint pointAtX:3 andY:3] withColor:nil];
+//    [self.triangulation addPoint:[DelaunayPoint pointAtX:3 andY:self.bounds.size.height - 3] withColor:nil];
+//    [self.triangulation addPoint:[DelaunayPoint pointAtX:self.bounds.size.width - 3 andY:3] withColor:nil];
+//    [self.triangulation addPoint:[DelaunayPoint pointAtX:self.bounds.size.width - 3 andY:self.bounds.size.height - 3] withColor:nil];
+    
 }
 
 - (void)splitByVoronoyCells
@@ -76,7 +81,6 @@
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
-    int i = 0;
     for (VoronoiCell *cell in [voronoiCells objectEnumerator])
     {
         [cell restrictByFrame:self.bounds];
@@ -96,7 +100,6 @@
         sublayer.borderWidth = 1.0;
         [self.layer addSublayer:sublayer];
         [fragmentsSublayers addObject:sublayer];
-        i++;
     }
     self.image = nil;
 }

@@ -13,24 +13,24 @@
 
 - (void)restrictByFrame:(CGRect)frame
 {
-//    CGPoint topLeftPoint = frame.origin;
-//    CGPoint bottomRightPoint = CGPointMake(CGRectGetMaxX(frame), CGRectGetMaxY(frame));
-//    NSMutableArray *newNodes = [NSMutableArray arrayWithCapacity:self.nodes.count];
-//    
-//    for (NSValue *pointValue in self.nodes) {
-//        CGPoint point = [pointValue CGPointValue];
-//        if (point.x < topLeftPoint.x)
-//            point.x = topLeftPoint.x;
-//        if (point.y < topLeftPoint.y)
-//            point.y = topLeftPoint.y;
-//        if (point.x > bottomRightPoint.x)
-//            point.x = bottomRightPoint.x;
-//        if (point.y > bottomRightPoint.y)
-//            point.y = bottomRightPoint.y;
-//        
-//        [newNodes addObject:[NSValue valueWithCGPoint:point]];
-//    }
-//    self.nodes = newNodes;
+    CGPoint topLeftPoint = frame.origin;
+    CGPoint bottomRightPoint = CGPointMake(CGRectGetMaxX(frame), CGRectGetMaxY(frame));
+    NSMutableArray *newNodes = [NSMutableArray arrayWithCapacity:self.nodes.count];
+    
+    for (NSValue *pointValue in self.nodes) {
+        CGPoint point = [pointValue CGPointValue];
+        if (point.x < topLeftPoint.x)
+            point.x = topLeftPoint.x;
+        if (point.y < topLeftPoint.y)
+            point.y = topLeftPoint.y;
+        if (point.x > bottomRightPoint.x)
+            point.x = bottomRightPoint.x;
+        if (point.y > bottomRightPoint.y)
+            point.y = bottomRightPoint.y;
+        
+        [newNodes addObject:[NSValue valueWithCGPoint:point]];
+    }
+    self.nodes = newNodes;
 }
 
 - (CGRect)frame
@@ -56,23 +56,7 @@
 }
 
 - (CGImageRef)maskedImage:(CGImageRef)image cropedByFrame:(out CGRect *)frame
-{
-    CGPoint topLeftPoint = CGPointMake(0, 0);
-    CGPoint bottomRightPoint = CGPointMake(768, 1029);
-    
-    for (NSValue *pointValue in self.nodes) {
-        CGPoint point = [pointValue CGPointValue];
-        if (point.x < topLeftPoint.x)
-            return nil;
-        if (point.y < topLeftPoint.y)
-            return nil;
-        if (point.x > bottomRightPoint.x)
-            return nil;
-        if (point.y > bottomRightPoint.y)
-            return nil;
-    }
-
-    
+{   
     CGRect selfFrame = [self frame];
     
     // Cut the original image
@@ -90,11 +74,11 @@
     
     NSValue *prevPoint = [self.nodes lastObject];
     CGPoint p = [prevPoint CGPointValue];
-    CGContextMoveToPoint(context, p.x -  selfFrame.origin.x, p.y -  selfFrame.origin.y);
+    CGContextMoveToPoint(context, (p.x - selfFrame.origin.x), selfFrame.size.height-(p.y -  selfFrame.origin.y) );
     for ( NSValue *point in self.nodes)
     {
         CGPoint p = [point CGPointValue];
-        CGContextAddLineToPoint(context, p.x - selfFrame.origin.x, p.y - selfFrame.origin.y);
+        CGContextAddLineToPoint(context, (p.x - selfFrame.origin.x), selfFrame.size.height-(p.y -  selfFrame.origin.y) );
     }
     CGContextFillPath(context);
     
