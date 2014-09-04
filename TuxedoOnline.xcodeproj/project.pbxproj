@@ -23,12 +23,13 @@
 		7E4DF98D19B5E8A100A9980E /* pant_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF98919B5E8A100A9980E /* pant_black.png */; };
 		7E4DF98E19B5E8A100A9980E /* pant_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF98A19B5E8A100A9980E /* pant_white.png */; };
 		7E4DF99319B5EA2000A9980E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4DF99219B5EA2000A9980E /* QuartzCore.framework */; };
-		7E4DF99619B5EADD00A9980E /* ZDFragmentsImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF99519B5EADD00A9980E /* ZDFragmentsImageView.m */; };
+		7E4DF99619B5EADD00A9980E /* ZDFragmentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF99519B5EADD00A9980E /* ZDFragmentsView.m */; };
 		7E4DF99819B5FACE00A9980E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E4DF99719B5FACE00A9980E /* CoreGraphics.framework */; };
 		7E4DF99B19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF99A19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m */; };
 		7E4DF99D19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF99C19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg */; };
 		7E4DF9A119B6267200A9980E /* DelaunayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF9A019B6267200A9980E /* DelaunayView.m */; };
 		7EC80A4719B738B100193591 /* fIQueIEotX0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EC80A4619B738B100193591 /* fIQueIEotX0.jpg */; };
+		7EC80A4A19B8C4C800193591 /* VoronoyDiagram.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EC80A4819B8C4C800193591 /* VoronoyDiagram.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +70,8 @@
 		7E4DF98919B5E8A100A9980E /* pant_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pant_black.png; sourceTree = "<group>"; };
 		7E4DF98A19B5E8A100A9980E /* pant_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pant_white.png; sourceTree = "<group>"; };
 		7E4DF99219B5EA2000A9980E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7E4DF99419B5EADD00A9980E /* ZDFragmentsImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDFragmentsImageView.h; sourceTree = "<group>"; };
-		7E4DF99519B5EADD00A9980E /* ZDFragmentsImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDFragmentsImageView.m; sourceTree = "<group>"; };
+		7E4DF99419B5EADD00A9980E /* ZDFragmentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDFragmentsView.h; sourceTree = "<group>"; };
+		7E4DF99519B5EADD00A9980E /* ZDFragmentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDFragmentsView.m; sourceTree = "<group>"; };
 		7E4DF99719B5FACE00A9980E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7E4DF99919B5FB9100A9980E /* VoronoiCell+GeometryAndImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VoronoiCell+GeometryAndImage.h"; sourceTree = "<group>"; };
 		7E4DF99A19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "VoronoiCell+GeometryAndImage.m"; sourceTree = "<group>"; };
@@ -79,6 +80,8 @@
 		7E4DF99F19B6267200A9980E /* DelaunayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelaunayView.h; sourceTree = "<group>"; };
 		7E4DF9A019B6267200A9980E /* DelaunayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelaunayView.m; sourceTree = "<group>"; };
 		7EC80A4619B738B100193591 /* fIQueIEotX0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fIQueIEotX0.jpg; sourceTree = "<group>"; };
+		7EC80A4819B8C4C800193591 /* VoronoyDiagram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = VoronoyDiagram.c; sourceTree = "<group>"; };
+		7EC80A4919B8C4C800193591 /* VoronoyDiagram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoronoyDiagram.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,12 +131,14 @@
 				7E4DF95619B5E52700A9980E /* AppDelegate.m */,
 				7E4DF95819B5E52700A9980E /* ViewController.h */,
 				7E4DF95919B5E52700A9980E /* ViewController.m */,
-				7E4DF99419B5EADD00A9980E /* ZDFragmentsImageView.h */,
-				7E4DF99519B5EADD00A9980E /* ZDFragmentsImageView.m */,
+				7E4DF99419B5EADD00A9980E /* ZDFragmentsView.h */,
+				7E4DF99519B5EADD00A9980E /* ZDFragmentsView.m */,
 				7E4DF99919B5FB9100A9980E /* VoronoiCell+GeometryAndImage.h */,
 				7E4DF99A19B5FB9100A9980E /* VoronoiCell+GeometryAndImage.m */,
 				7E4DF99F19B6267200A9980E /* DelaunayView.h */,
 				7E4DF9A019B6267200A9980E /* DelaunayView.m */,
+				7EC80A4919B8C4C800193591 /* VoronoyDiagram.h */,
+				7EC80A4819B8C4C800193591 /* VoronoyDiagram.c */,
 				7E4DF95B19B5E52700A9980E /* Main.storyboard */,
 				7E4DF95E19B5E52700A9980E /* Images.xcassets */,
 				7E4DF97419B5E68700A9980E /* ThirdParty */,
@@ -321,7 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E4DF99619B5EADD00A9980E /* ZDFragmentsImageView.m in Sources */,
+				7E4DF99619B5EADD00A9980E /* ZDFragmentsView.m in Sources */,
 				7E4DF98219B5E68700A9980E /* DelaunayTriangle.m in Sources */,
 				7E4DF98119B5E68700A9980E /* DelaunayPoint.m in Sources */,
 				7E4DF95A19B5E52700A9980E /* ViewController.m in Sources */,
@@ -331,6 +336,7 @@
 				7E4DF98419B5E68700A9980E /* VoronoiCell.m in Sources */,
 				7E4DF95719B5E52700A9980E /* AppDelegate.m in Sources */,
 				7E4DF98319B5E68700A9980E /* DelaunayTriangulation.m in Sources */,
+				7EC80A4A19B8C4C800193591 /* VoronoyDiagram.c in Sources */,
 				7E4DF95419B5E52700A9980E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
