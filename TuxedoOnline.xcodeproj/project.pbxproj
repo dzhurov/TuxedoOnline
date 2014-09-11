@@ -29,7 +29,6 @@
 		7E4DF99D19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7E4DF99C19B613DC00A9980E /* Gray-Sky-Over-Ocean.jpg */; };
 		7E4DF9A119B6267200A9980E /* DelaunayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF9A019B6267200A9980E /* DelaunayView.m */; };
 		7EC80A4719B738B100193591 /* fIQueIEotX0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EC80A4619B738B100193591 /* fIQueIEotX0.jpg */; };
-		7EC80A4A19B8C4C800193591 /* VoronoyDiagram.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EC80A4819B8C4C800193591 /* VoronoyDiagram.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -336,7 +335,6 @@
 				7E4DF98419B5E68700A9980E /* VoronoiCell.m in Sources */,
 				7E4DF95719B5E52700A9980E /* AppDelegate.m in Sources */,
 				7E4DF98319B5E68700A9980E /* DelaunayTriangulation.m in Sources */,
-				7EC80A4A19B8C4C800193591 /* VoronoyDiagram.c in Sources */,
 				7E4DF95419B5E52700A9980E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
